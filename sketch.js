@@ -126,10 +126,10 @@ let computador;
 function falaPontos() {
     // use speechapi
     if('speechSynthesis' in window) {
-        const pontuacao = "Sukoa wa " + pontosJogador + " No " + pontosComputador;
+        const pontuacao = "Die Punktzahl beträgt " + pontosJogador + " zu " + pontosComputador;
         console.log(pontuacao);
         const msg = new SpeechSynthesisUtterance(pontuacao);
-        msg.lang = 'ja-JA';
+        msg.lang = 'de-DE';
         window.speechSynthesis.speak(msg);
     }
 }
